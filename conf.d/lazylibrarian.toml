@@ -1,0 +1,9 @@
+[template]
+src = "lazylibrarian.ini.tmpl"
+dest = "/srv/lazylibrarian/config/lazylibrarian.ini"
+keys = [
+	"/self/host/labels/depot.user",
+	"/self/host/labels/depot.password",
+	"/self/host/labels/depot.lazylibrarian.api_key",
+	"/self/host/labels/depot.pushover.api_key"
+]

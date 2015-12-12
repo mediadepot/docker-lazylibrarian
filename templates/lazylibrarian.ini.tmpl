@@ -1,0 +1,216 @@
+[General]
+http_port = 8080
+logdir = /srv/lazylibrarian/data/Logs
+loglevel = 2
+match_ratio = 80
+http_host = 0.0.0.0
+http_user = {{getv "/self/host/labels/depot.user"}}
+http_pass = {{getv "/self/host/labels/depot.password"}}
+http_root =
+http_look = default
+launch_browser = 1
+proxy_host =
+proxy_type =
+imp_preflang = en, eng, en-US
+imp_monthlang = en_US.utf8
+imp_autoadd =
+imp_onlyisbn = 0
+imp_singlebook = 0
+destination_copy = 0
+destination_dir = /mnt/ebooks
+alternate_dir =
+download_dir = /mnt/downloads
+ebook_type = epub, mobi, pdf
+
+[Git]
+git_user = dobytang
+git_repo = lazylibrarian
+git_branch = master
+install_type = git
+current_version = b727dca0d64462dd9da5bc4cc693b78c068b05d2
+latest_version = b727dca0d64462dd9da5bc4cc693b78c068b05d2
+commits_behind = 0
+
+[SABnzbd]
+sab_host =
+sab_port =
+sab_subdir =
+sab_user =
+sab_pass =
+sab_api =
+sab_cat =
+
+[NZBGet]
+nzbget_host =
+nzbget_user =
+nzbget_pass =
+nzbget_cat =
+nzbget_priority = 0
+
+[DLMethod]
+use_nzb = 0
+use_tor = 1
+
+[USENET]
+nzb_downloader_sabnzbd = 0
+nzb_downloader_nzbget = 0
+nzb_downloader_blackhole = 0
+nzb_blackholedir =
+usenet_retention =
+
+[NZBMatrix]
+nzbmatrix = 0
+nzbmatrix_user =
+nzbmatrix_api =
+
+[Newznab0]
+newznab0 = 0
+newznab_host0 =
+newznab_api0 =
+
+[Newznab1]
+newznab1 = 0
+newznab_host1 =
+newznab_api1 =
+
+[Newznab2]
+newznab2 = 0
+newznab_host2 =
+newznab_api2 =
+
+[Newznab3]
+newznab3 = 0
+newznab_host3 =
+newznab_api3 =
+
+[Newznab4]
+newznab4 = 0
+newznab_host4 =
+newznab_api4 =
+
+[Torznab0]
+torznab0 = 0
+torznab_host0 =
+torznab_api0 =
+
+[Torznab1]
+torznab1 = 0
+torznab_host1 =
+torznab_api1 =
+
+[Torznab2]
+torznab2 = 0
+torznab_host2 =
+torznab_api2 =
+
+[Torznab3]
+torznab3 = 0
+torznab_host3 =
+torznab_api3 =
+
+[Torznab4]
+torznab4 = 0
+torznab_host4 =
+torznab_api4 =
+
+[TORRENT]
+tor_downloader_blackhole = 1
+tor_downloader_utorrent = 0
+tor_downloader_transmission = 0
+tor_downloader_deluge = 0
+numberofseeders = 10
+torrent_dir = /mnt/blackhole
+
+[UTORRENT]
+utorrent_host =
+utorrent_user =
+utorrent_pass =
+utorrent_label =
+
+[TRANSMISSION]
+transmission_host =
+transmission_user =
+transmission_pass =
+
+[DELUGE]
+deluge_host =
+deluge_port =
+deluge_user =
+deluge_pass =
+
+[KAT]
+kat = 1
+kat_host = kat.cr
+
+[Newzbin]
+newzbin = 0
+newzbin_uid = None
+newzbin_pass = None
+
+[SearchScan]
+search_interval = 360
+scan_interval = 10
+versioncheck_interval = 24
+
+[LibraryScan]
+full_scan = 0
+add_author = 1
+notfound_status = Skipped
+newbook_status = Skipped
+
+[PostProcess]
+ebook_dest_folder = $Author/$Title
+ebook_dest_file = $Title - $Author
+mag_dest_folder = _Magazines/$Title/$IssueDate
+mag_dest_file = $IssueDate - $Title
+mag_relative = 1
+
+[Twitter]
+use_twitter = 0
+twitter_notify_onsnatch = 0
+twitter_notify_ondownload = 0
+twitter_username =
+twitter_password =
+twitter_prefix = LazyLibrarian
+
+[Boxcar]
+use_boxcar = 0
+boxcar_notify_onsnatch = 0
+boxcar_notify_ondownload = 0
+boxcar_token =
+
+[Pushbullet]
+use_pushbullet = 0
+pushbullet_notify_onsnatch = 0
+pushbullet_notify_ondownload = 0
+pushbullet_token =
+pushbullet_deviceid =
+
+[Pushover]
+use_pushover = 1
+pushover_onsnatch = 1
+pushover_ondownload = 1
+pushover_keys = {{getv "/self/host/labels/depot.pushover.api_key"}}
+pushover_apitoken =
+pushover_priority = 0
+pushover_device =
+
+[AndroidPN]
+use_androidpn = 0
+androidpn_notify_onsnatch = 0
+androidpn_notify_ondownload = 0
+androidpn_url =
+androidpn_username =
+androidpn_broadcast = 1
+
+[NMA]
+use_nma = 0
+nma_apikey =
+nma_priority = 0
+nma_onsnatch = 0
+nma_ondownload = 0
+
+[API]
+book_api = GoodReads
+gr_api = ckvsiSDsuqh7omh74ZZ6Q
+gb_api =
