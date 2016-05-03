@@ -7,7 +7,7 @@ sh /srv/config.sh
 chown mediadepot:mediadepot -R /srv/lazylibrarian
 
 # download the latest version of LazyLibrarian
-[[ ! -d /srv/lazylibrarian/app/.git ]] && su -c "https://github.com/DobyTang/LazyLibrarian/ /srv/lazylibrarian/app" mediadepot
+[[ ! -d /srv/lazylibrarian/app/.git ]] && su -c "git clone https://github.com/DobyTang/LazyLibrarian.git /srv/lazylibrarian/app" mediadepot
 
 # opt out for autoupdates using env variable
 if [ -z "$ADVANCED_DISABLEUPDATES" ]; then
